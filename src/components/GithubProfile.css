@@ -1,0 +1,89 @@
+.gh-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.gh-card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.gh-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid #334155;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.gh-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.gh-user {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.3rem;
+}
+
+.gh-tag {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: #94a3b8;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 0.15rem 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.gh-bio {
+  font-size: 0.8rem;
+  color: #38bdf8;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.gh-desc {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.gh-external {
+  color: #64748b;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: color 0.2s ease;
+}
+
+.gh-card:hover .gh-external {
+  color: #e2e8f0;
+}
+
+@media (max-width: 700px) {
+  .gh-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gh-external {
+    display: none;
+  }
+}

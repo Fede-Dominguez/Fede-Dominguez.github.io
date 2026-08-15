@@ -1,0 +1,9 @@
+# Caddyfile TEMPORAL para probar por IP mientras el PR de is-a.dev no mergea.
+# Sirve HTTP puro en el puerto 80 (sin TLS: no hay dominio todavia).
+# Cuando fede.is-a.dev resuelva, reemplazar por el Caddyfile definitivo.
+:80 {
+	root * /var/www/portfolio
+	encode zstd gzip
+	try_files {path} /index.html
+	file_server
+}
