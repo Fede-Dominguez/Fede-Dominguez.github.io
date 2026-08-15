@@ -1,16 +1,44 @@
-# React + Vite
+# Portfolio — Federico Dominguez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal, con demos interactivas de mis proyectos embebidas en el sitio.
 
-Currently, two official plugins are available:
+**En vivo:** https://fede-dominguez.github.io
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Que tiene
 
-## React Compiler
+Ademas de las secciones habituales (about, experiencia, educacion), cada card de
+proyecto abre una **demo jugable en el navegador**, sin backend ni datos reales:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Scrum Cockpit** — board kanban en miniatura con feed de eventos en vivo y progreso de sprint.
+- **LAN Light** — habitacion simulada con una tira RGB: swatches, brillo y power, mas una terminal con los comandos `lanlight` equivalentes.
+- **Bingo (C)** — bingo jugable de verdad: carton de 3x5 sobre 90 bolillas, con linea y bingo.
 
-## Expanding the ESLint configuration
+Los repos de cada proyecto: [scrum-cockpit](https://github.com/Fede-Dominguez/scrum-cockpit) ·
+[lanlight](https://github.com/Fede-Dominguez/lanlight) ·
+[bingo-c](https://github.com/Fede-Dominguez/bingo-c) ·
+[BlogEngineApp](https://github.com/Fede-Dominguez/BlogEngineApp) ·
+[coffeshop](https://github.com/Fede-Dominguez/coffeshop)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Stack
+
+React 19 + Vite 8, CSS plano (sin framework de UI), react-icons.
+Tema oscuro slate con acento `#38bdf8`. Sin router: es una sola pagina.
+
+## Correrlo local
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+Cada push a `main` dispara el workflow de `.github/workflows/deploy.yml`, que
+buildea y publica en GitHub Pages.
+
+La carpeta `deploy/` guarda una alternativa de hosting self-managed — Caddy sobre
+una VM, con TLS de Let's Encrypt — que quedo sin usar pero funciona.
+
+## Contacto
+
+[LinkedIn](https://www.linkedin.com/in/federicod23/) · [GitHub](https://github.com/Fede-Dominguez)
