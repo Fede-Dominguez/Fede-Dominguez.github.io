@@ -2,7 +2,7 @@
 
 Portfolio personal, con demos interactivas de mis proyectos embebidas en el sitio.
 
-**En vivo:** https://fede-dominguez.github.io
+**En vivo:** https://fede.is-a.dev
 
 ## Que tiene
 
